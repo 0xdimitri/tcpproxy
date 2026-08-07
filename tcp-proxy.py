@@ -105,11 +105,6 @@ def server_loop(local_host, local_port, remote_host, remote_port, receive_first)
 def main():
     if len(sys.argv[1:]) != 5:
         print("Usage: ./proxy.py [localhost] [localport]", end='')
-
-
-
-
-
         print("[remotehost] [remoteport] [receive_first]")
         print("Example: ./proxy.py 127.0.0.1 9000 10.12.132.1 9000 True")
         sys.exit(0)
